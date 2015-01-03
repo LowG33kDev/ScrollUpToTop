@@ -1,0 +1,28 @@
+{
+  "name": "ScrollUpToTop",
+  "version": "0.1.0",
+  "homepage": "https://github.com/LowG33kDev/ScrollUpToTop",
+  "authors": [
+    "LowG33kDev <loic.marchand73.dev@gmail.com>"
+  ],
+  "description": "A jQuery plugin to scroll up to top of webpage in one click.",
+  "main": "src/jquery.scrolluptotop.js",
+  "keywords": [
+    "js",
+    "jquery",
+    "plugin",
+    "scroll",
+    "up"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.3"
+  }
+}
