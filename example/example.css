@@ -1,0 +1,17 @@
+
+body {
+    margin: 0;
+    background: #CCC;
+}
+
+#content{
+    width: 960px;
+    margin: 10px auto;
+    padding: 20px;
+    background: #EEE;
+    border-radius: 5px;
+}
+
+h1{
+    margin-top: 0;
+}
