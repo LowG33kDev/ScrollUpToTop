@@ -1,7 +1,7 @@
 module.exports = function(grunt){
     
     grunt.loadNpmTasks('grunt-contrib-uglify');
-    grunt.loadNpmTasks('grunt-contrib-copy');
+    grunt.loadNpmTasks('grunt-contrib-cssmin');
     
     grunt.initConfig({
         pkg:grunt.file.readJSON('package.json'),
@@ -9,18 +9,19 @@ module.exports = function(grunt){
         uglify: {
             dist:{
                 files:{
-                    "dist/jquery.scrolluptotop.min.js":["src/jquery.scrolluptotop.js"]
+                    "dist/js/jquery.scrolluptotop.min.js":["src/js/jquery.scrolluptotop.js"]
                 }
             }
         },
-        copy: {
+        cssmin: {
             dist: {
-                src: 'src/css/*',
-                dest: 'dist/css/',
+                files: {
+                    'dist/css/jquery.scrolluptotop.min.css': ['src/css/jquery.scrolluptotop.css']
+                }
             }
         }
         
     });
     
-    grunt.registerTask('default',['uglify','copy']);
+    grunt.registerTask('default',['uglify','cssmin']);
 }

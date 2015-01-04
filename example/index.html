@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <title>Scroll Up To Top example</title>
         <link rel="stylesheet" href="example.css">
-        <link rel="stylesheet" href="../src/css/jquery.scrolluptotop.css">
+        <link rel="stylesheet" href="../dist/css/jquery.scrolluptotop.min.css">
     </head>
     <body>
         <div id="content">
@@ -21,6 +21,11 @@
             </article>
         </div>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-        <script src="../src/jquery.scrolluptotop.js"></script>
+        <script src="../dist/js/jquery.scrolluptotop.min.js"></script>
+        <script>
+            (function($){
+                $.ScrollUpToTop({"speedUp":1500});
+            })(jQuery);
+        </script>
     </body>
 </html>

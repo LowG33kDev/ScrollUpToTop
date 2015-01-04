@@ -2,3 +2,4 @@
 
 ## Features
 * Change directory structure
+* Add option speedUp

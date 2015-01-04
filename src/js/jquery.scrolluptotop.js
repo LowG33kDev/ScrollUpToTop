@@ -1,10 +1,12 @@
 (function($){
     'use strcit';
     
-    $.ScrollUpToTop = function(options){
+    $.fn.ScrollUpToTop = function(options){
         
         // Default options
-        options = $.extend({}, options);
+        options = $.extend({
+                "speedUp": 800
+            }, options);
         
         // Variables
         var $btnScroll = $("<button id=\"ScrollUpToTop\">^</button>").hide();
@@ -18,7 +20,7 @@
             e.preventDefault();
             $($body).animate(
                 {scrollTop:0},
-                800
+                options.speedUp
             );
         });
         
@@ -31,7 +33,5 @@
         });
         
     };
-    
-    $.ScrollUpToTop();
-    
+        
 })(jQuery);
