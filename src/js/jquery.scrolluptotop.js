@@ -12,7 +12,7 @@
 
         // Variables
         var $btnScroll = $("<button id=\"ScrollUpToTop\" class=\""+options.scrollClass+"\">"+options.scrollText+"</button>").hide();
-        var $body = $(document.body);
+        var $body = $('html,body');
 
         // insert scroll up to top button
         $($body).append($btnScroll);
