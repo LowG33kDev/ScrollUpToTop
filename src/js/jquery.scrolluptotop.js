@@ -12,21 +12,19 @@
 
         // Variables
         var $btnScroll = $("<button id=\"ScrollUpToTop\" class=\""+options.scrollClass+"\">"+options.scrollText+"</button>").hide();
-        var $body = $(document.body);
-
         // insert scroll up to top button
-        $($body).append($btnScroll);
+        $('body').append($btnScroll);
 
         // attach click event on button
-        $($btnScroll).click(function(e){
+        $($btnScroll).on('click',function(e){
             e.preventDefault();
-            $($body).animate(
+            $('html,body').animate(
                 {scrollTop:0},
                 options.speedUp
             );
         });
 
-        $(window).scroll(function(){
+        $(window).on('scroll',function(){
             if( $(window).scrollTop() > 0) {
                 $($btnScroll).fadeIn();
             } else {
